@@ -1,0 +1,33 @@
+<!-- Drag and drop area  -->
+<!-- hasBaseDropZoneOver when true the css class nv-file-over is applied -->
+<!-- ng2FileDrop is the directive we use to make it draggable and droppable -->
+<!-- fileover is the function that changes the hasBaseDropZoneOver to true  -->
+<!-- setting uploader variable of the directive with the uploader we created in TS  -->
+<div ng2FileDrop [ngClass]="{'nv-file-over': hasBaseDropZoneOver}" (fileOver)="fileOverBase($event)" [uploader]="uploader" class="drop-zone">
+  Drop files here...
+</div>
+
+<div class="file-input-container">
+  <label>
+    <!-- allows to select multiple files and put them in queue in uploader array -->
+    <!-- ng2FileSelect is the directive we use to upload several files -->
+    <input type="file" ng2FileSelect [uploader]="uploader" multiple />
+    Add Files
+  </label>
+</div>
+
+<!-- to keep track of number of uploaded files -->
+<h2>Files: {{ uploader.queue.length }}</h2>
+
+<!-- showing files  -->
+<ion-list>
+  <ion-reorder-group (ionItemReorder)="reorderFiles($event)" disabled="false">
+    <!-- for loop on files in queue to show thier names -->
+    <ion-item *ngFor="let item of uploader.queue">
+      <ion-label>
+        {{ item?.file?.name }}
+      </ion-label>
+      <ion-reorder></ion-reorder>
+    </ion-item>
+  </ion-reorder-group>
+</ion-list>

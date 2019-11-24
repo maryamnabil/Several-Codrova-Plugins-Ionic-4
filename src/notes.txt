@@ -1,0 +1,8 @@
+//besm allah alraman alrahem
+
+ionic generate service services/translateConfig
+ionic g page SettingsPage
+
+
+ npm i @ngx-translate/core @ngx-translate/http-loader
+
