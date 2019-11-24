@@ -19,6 +19,7 @@ export class TranslateConfigService {
   init() {
     this.translate.setDefaultLang(this.getDefaultLanguage());
   }
+// set default language to en
   getDefaultLanguage() {
     let language = 'en';
     if (this.defaultLang !== '') {
@@ -28,7 +29,7 @@ export class TranslateConfigService {
     }
     return language;
   }
-
+// setting language
   setLanguage(setLang) {
     this.defaultLang = setLang;
     this.translate.use(setLang);

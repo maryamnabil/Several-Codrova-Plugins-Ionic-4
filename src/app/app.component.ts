@@ -22,26 +22,26 @@ export class AppComponent {
       url: '/home',
       icon: 'home'
     },
+    // {
+    //   title: 'List',
+    //   url: '/list',
+    //   icon: 'list'
+    // },
+    // {
+    //   title: 'Login',
+    //   url: '/login',
+    //   icon: 'home'
+    // },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    },
-    {
-      title: 'Login',
-      url: '/login',
-      icon: 'home'
-    },
-    {
-      title: 'Setting',
+      title: 'Settings',
       url: '/settings',
       icon: 'settings'
-    },
-    {
-      title: 'Profile',
-      url: '/profile',
-      icon: 'home'
     }
+    // {
+    //   title: 'Profile',
+    //   url: '/profile',
+    //   icon: 'home'
+    // }
 
   ];
 
@@ -54,6 +54,7 @@ export class AppComponent {
   ) {
     this.initializeApp();
     this.translateConfigService.init();
+    // setting the text direction and the menu direction
     this.events.subscribe('language', (lng) => {
       // this.updateLang();
       this.textDir = (lng === 'ar') ? 'rtl' : 'ltr';
@@ -61,6 +62,7 @@ export class AppComponent {
       this.menuType = null;
       // this.menuType = 'overlay';
       setTimeout(() => {
+        // setting menu animation
         this.menuType = 'overlay';
       }, 100);
     });

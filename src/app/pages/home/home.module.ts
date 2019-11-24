@@ -20,7 +20,7 @@ import { HomePage } from './home.page';
         component: HomePage
       }
     ]),
-    TranslateModule.forChild() 
+    TranslateModule.forChild()
   ],
   declarations: [HomePage, MultiFileUploadComponent]
 })
