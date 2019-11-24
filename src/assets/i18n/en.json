@@ -8,6 +8,8 @@
     "cancel":"Cancel",
     "Settings":"Settings",
     "Home":"Home",
-    "Menu":"Menu"
+    "Menu":"Menu",
+    "BarcodeScanner":"Barcode Scanner",
+    "Scan":"Scan"
 
 }

@@ -22,7 +22,9 @@ const routes: Routes = [
   { path: 'login',
     loadChildren: './pages/login/login.module#LoginPageModule' },
   { path: 'profile',
-    loadChildren: './pages/profile/profile.module#ProfilePageModule' }
+    loadChildren: './pages/profile/profile.module#ProfilePageModule' },
+  { path: 'barcode-scanner', loadChildren: './pages/barcode-scanner/barcode-scanner.module#BarcodeScannerPageModule' }
+
 ];
 
 @NgModule({

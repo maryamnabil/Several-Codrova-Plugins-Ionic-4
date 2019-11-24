@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{'BarcodeScanner'| translate:params}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-button expand="block"  (click)= "scanCode()" color="success">{{ 'Scan' | translate:params }} </ion-button>
+</ion-content>

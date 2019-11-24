@@ -22,11 +22,11 @@ export class AppComponent {
       url: '/home',
       icon: 'home'
     },
-    // {
-    //   title: 'List',
-    //   url: '/list',
-    //   icon: 'list'
-    // },
+    {
+      title: 'BarcodeScanner',
+      url: '/barcode-scanner',
+      icon: 'qr-scanner'
+    },
     // {
     //   title: 'Login',
     //   url: '/login',
