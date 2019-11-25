@@ -23,7 +23,8 @@ const routes: Routes = [
     loadChildren: './pages/login/login.module#LoginPageModule' },
   { path: 'profile',
     loadChildren: './pages/profile/profile.module#ProfilePageModule' },
-  { path: 'barcode-scanner', loadChildren: './pages/barcode-scanner/barcode-scanner.module#BarcodeScannerPageModule' }
+  { path: 'barcode-scanner', loadChildren: './pages/barcode-scanner/barcode-scanner.module#BarcodeScannerPageModule' },  { path: 'map', loadChildren: './pages/map/map.module#MapPageModule' }
+
 
 ];
 

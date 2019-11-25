@@ -27,11 +27,11 @@ export class AppComponent {
       url: '/barcode-scanner',
       icon: 'qr-scanner'
     },
-    // {
-    //   title: 'Login',
-    //   url: '/login',
-    //   icon: 'home'
-    // },
+    {
+      title: 'Map',
+      url: '/map',
+      icon: 'map'
+    },
     {
       title: 'Settings',
       url: '/settings',
